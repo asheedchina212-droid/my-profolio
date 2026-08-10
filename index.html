@@ -350,6 +350,9 @@
         }
 
         /* About */
+        .section-title{
+            margin-top:-130px;
+        }
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -610,6 +613,10 @@
             animation: none;
         }
     </style>
+<!-- Lightbox2 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    
 </head>
 <body>
 
@@ -645,8 +652,8 @@
             </div>
             <div class="hero-avatar">
                 <div class="avatar-box">
-                    <img src="jpg.45" alt="صورة اشيد الشخصية">
-                    <span class="upload-hint">📸 ضع صورتك</span>
+                    <img src="pectior2.jpg" alt="صورة اشيد الشخصية">
+                
                 </div>
             </div>
         </div>
@@ -658,20 +665,19 @@
             <p class="section-sub">شغوف بتطوير الويب وتقديم حلول برمجية متكاملة</p>
             <div class="about-grid">
                 <div class="glass-card about-image-card">
-                    <img src="png.44" alt="صورة شخصية">
-                    <span class="upload-hint">🖼️ ضع صورتك هنا أيضاً</span>
+                    <img src="pectior3.jpg" alt="صورة شخصية">
+
                 </div>
                 <div class="glass-card about-card">
                     <h3><i class="fas fa-user-astronaut"></i> من أنا؟</h3>
                     <p style="color: #94A3B8; margin-bottom: 20px;">مطور ويب مقيم في اليمن، أمتلك خبرة واسعة في تطوير الأنظمة الديناميكية باستخدام تقنيات الـ Backend والـ Frontend معاً، وأؤمن بأن البرمجية الجيدة تبدأ من فهم عميق لاحتياجات المستخدم.</p>
                     <div class="stat-item"><span>📅 الخبرة</span> <span>2+ سنوات</span></div>
-                    <div class="stat-item"><span>🎓 المؤهل</span> <span>بكالوريوس / دبلوم تقني</span></div>
+                    <div class="stat-item"><span>🎓 المؤهل</span> <span>بكالوريوس / هندسة شبكات </span></div>
                     <div class="stat-item"><span>🌍 الموقع</span> <span>اليمن / عن بُعد</span></div>
                 </div>
             </div>
         </div>
     </section>
-
     <section id="skills">
         <div class="container">
             <h2 class="section-title">المهارات التقنية</h2>
@@ -686,7 +692,6 @@
             </div>
         </div>
     </section>
-
     <section id="experience">
         <div class="container">
             <h2 class="section-title">الخبرات المهنية</h2>
@@ -713,65 +718,82 @@
             </div>
         </div>
     </section>
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">أبرز المشاريع</h2>
+        <p class="section-sub">نماذج من أعمالي السابقة - اضغط على الصورة لتكبيرها</p>
+        <div class="projects-grid">
 
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">أبرز المشاريع</h2>
-            <p class="section-sub">نماذج من أعمالي التي تعكس خبرتي في PHP و MySQL</p>
-            <div class="projects-grid">
-                <div class="glass-card project-card">
-                    <div class="icon"><i class="fas fa-store-alt"></i></div>
-                    <h4>نظام متجر إلكتروني</h4>
-                    <p>منصة تسوق كاملة مع لوحة تحكم، إدارة منتجات، عملاء، وطلبات باستخدام PHP و MySQL مع واجهة مستخدم عصرية.</p>
-                    <div class="tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div>
+            <!-- المشروع الأول -->
+            <div class="glass-card project-card">
+                <a href="images/project1.jpg" data-lightbox="projects" data-title="نظام طبي   متكامل">
+                    <img src="images/project1.jpg" alt="نظام متجر إلكتروني" style="width:100%; height:200px; object-fit:cover; border-radius:12px; margin-bottom:15px; border:1px solid rgba(139,92,246,0.2); transition:0.3s; cursor:pointer;">
+                </a>
+                <h4>🛒 نظام متجر إلكتروني</h4>
+                <p style="color: #94A3B8; font-size:0.95rem;">منصة حجز كاملة مع لوحة تحكم، إدارة حجوزات   وطلبات العملاء باستخدام PHP و MySQL.</p>
+                <div class="tags">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>Bootstrap</span>
                 </div>
-                <div class="glass-card project-card">
-                    <div class="icon"><i class="fas fa-tasks"></i></div>
-                    <h4>نظام إدارة المهام (ERP)</h4>
-                    <p>تطبيق ويب لإدارة المشاريع والمهام مع صلاحيات متعددة للمستخدمين، وتقارير لحظية، وقاعدة بيانات مترابطة.</p>
-                    <div class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
-                </div>
-                <div class="glass-card project-card">
-                    <div class="icon"><i class="fas fa-blog"></i></div>
-                    <h4>مدونة تفاعلية (CMS)</h4>
-                    <p>نظام إدارة محتوى مخصص للمدونات والمقالات مع إمكانية البحث، التصنيفات، وواجهة إدارة سهلة الاستخدام.</p>
-                    <div class="tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span></div>
+                <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <a href="https://medicare-hub-clinic.netlify.app/" target="_blank" class="btn btn-primary" style="flex:1; padding:10px 14px; font-size:0.9rem; text-align:center; min-width:120px;">
+                        🔗 زيارة الموقع
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
 
+            <!-- المشروع الثاني -->
+            <div class="glass-card project-card">
+                <a href="images/project2.jpg" data-lightbox="projects" data-title="نظام إدارة المهام (ERP)">
+                    <img src="images/project2.jpg" alt="نظام إدارة المهام" style="width:100%; height:200px; object-fit:cover; border-radius:12px; margin-bottom:15px; border:1px solid rgba(139,92,246,0.2); transition:0.3s; cursor:pointer;">
+                </a>
+                <h4>📋 نظام إدارة المهام (ERP)</h4>
+                <p style="color: #94A3B8; font-size:0.95rem;">تطبيق ويب لإدارة المشاريع والمهام مع صلاحيات متعددة للمستخدمين، وتقارير لحظية.</p>
+                <div class="tags">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>JavaScript</span>
+                </div>
+                <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <a href="https://your-project2-link.com" target="_blank" class="btn btn-primary" style="flex:1; padding:10px 14px; font-size:0.9rem; text-align:center; min-width:120px;">
+                        🔗 زيارة الموقع
+                    </a>
+                </div>
+            </div>
+
+            <!-- المشروع الثالث -->
+            <div class="glass-card project-card">
+                <a href="images/project3.jpg" data-lightbox="projects" data-title="مدونة تفاعلية (CMS)">
+                    <img src="images/project3.jpg" alt="مدونة تفاعلية" style="width:100%; height:200px; object-fit:cover; border-radius:12px; margin-bottom:15px; border:1px solid rgba(139,92,246,0.2); transition:0.3s; cursor:pointer;">
+                </a>
+                <h4>📝 مدونة تفاعلية (CMS)</h4>
+                <p style="color: #94A3B8; font-size:0.95rem;">نظام إدارة محتوى مخصص للمدونات والمقالات مع إمكانية البحث، التصنيفات، وواجهة إدارة سهلة.</p>
+                <div class="tags">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>HTML/CSS</span>
+                </div>
+                <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <a href="https://your-project3-link.com" target="_blank" class="btn btn-primary" style="flex:1; padding:10px 14px; font-size:0.9rem; text-align:center; min-width:120px;">
+                        🔗 زيارة الموقع
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+/////////
     <section id="contact">
         <div class="container text-center">
             <h2 class="section-title">تواصل معي</h2>
             <p class="section-sub">أرسل لي رسالتك وسأرد عليك في أقرب وقت</p>
-            
-            <form class="contact-form" action="send_email.php" method="POST" style="max-width: 650px; margin: 0 auto; text-align: right;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                    <div class="glass-card" style="padding: 20px; animation: none; border-color: rgba(139,92,246,0.2);">
-                        <label for="sender_name">الاسم الكامل</label>
-                        <input type="text" id="sender_name" name="sender_name" class="form-input" placeholder="اكتب اسمك..." required>
-                    </div>
-                    <div class="glass-card" style="padding: 20px; animation: none; border-color: rgba(139,92,246,0.2);">
-                        <label for="sender_email">البريد الإلكتروني</label>
-                        <input type="email" id="sender_email" name="sender_email" class="form-input" placeholder="بريدك الإلكتروني..." required>
-                    </div>
-                </div>
-                <div class="glass-card" style="padding: 20px; margin-top: 20px; animation: none; border-color: rgba(139,92,246,0.2);">
-                    <label for="subject">عنوان الرسالة</label>
-                    <input type="text" id="subject" name="subject" class="form-input" placeholder="موضوع الرسالة..." required>
-                </div>
-                <div class="glass-card" style="padding: 20px; margin-top: 20px; animation: none; border-color: rgba(139,92,246,0.2);">
-                    <label for="message">نص الرسالة</label>
-                    <textarea id="message" name="message" rows="5" class="form-input" placeholder="اكتب رسالتك هنا..." required style="resize: vertical;"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-submit">
-                    <i class="fas fa-paper-plane" style="margin-left: 10px;"></i> إرسال الرسالة
-                </button>
-            </form>
+        
 
             <div class="contact-links">
-                <a href="ashydbdh@gmail.com"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
+                <a href="mailto:ashydbdh@gmail.com?subject=استفسار%20عن%20خدمات&body=مرحباً%20اشيد،%0A%0Aأنا%20مهتم%20بالتواصل%20معك%20بخصوص%20مشروع%20تطوير%20موقع.%0A%0Aأرجو%20الرد%20علي%20في%20أقرب%20وقت.%0A%0Aشكراً%20لك."><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
                 <a href="mailto:ashydbdh@gmail.com?subject=استفسار%20عن%20خدمات&body=مرحباً%20اشيد،%0A%0Aأنا%20مهتم%20بالتواصل%20معك%20بخصوص%20مشروع%20تطوير%20موقع.%0A%0Aأرجو%20الرد%20علي%20في%20أقرب%20وقت.%0A%0Aشكراً%20لك."><i class="fab fa-linkedin-in"></i> LinkedIn</a>
                 <a href="@gimail.com"><i class="fab fa-github"></i> GitHub</a>
               <a href="https://wa.me/967770784214" target="_blank">
